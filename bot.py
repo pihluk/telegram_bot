@@ -10,7 +10,7 @@ def start(update: Update, context: CallbackContext):
     reply_markup = InlineKeyboardMarkup(keyboard)
     update.message.reply_text("Welcome", reply_markup=reply_markup)
 
-updater = Updater("7511089847:AAE6Gdq7v4jqlFiYiwVzY0XkhLAwWWBnUQo", use_context=True)
+updater = Updater("7870515934:AAFZjzkfu0RurhYPPOwKPrxwxKNuZ3DDWKA", use_context=True)
 updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.start_polling()
 
