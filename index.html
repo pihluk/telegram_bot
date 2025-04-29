@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Mini App</title>
+  <meta charset="UTF-8">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <h2>Welcome!</h2>
+  <input id="data" type="text" placeholder="Type something..." />
+  <button onclick="sendData()">Submit</button>
+
+  <script>
+    function sendData() {
+      const data = document.getElementById('data').value;
+      Telegram.WebApp.sendData(data); // отправка в бот
+    }
+
+    Telegram.WebApp.ready(); // инициализация
+  </script>
+</body>
+</html>
